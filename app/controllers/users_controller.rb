@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 
   def update
     message = false
-
+    # Make some changes to a file.
     user = User.where("id = '#{params[:user][:id]}'")[0]
 
     if user
